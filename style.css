@@ -168,7 +168,9 @@ header {
     font-weight: 500;
     text-decoration: none;
     color: #000;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #service {
@@ -290,6 +292,9 @@ header {
     font-weight: 600;   
     font-family: "jost", sans-serif;
     transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-btn:hover {
@@ -567,6 +572,7 @@ header {
     font-weight: 400;
     margin-bottom: 42px;
     width: 100%;
+    text-align: justify;
 }
 .testimonial-img {
     height: 60px;
@@ -597,13 +603,32 @@ header {
     font-size: 14px;
     font-weight: 300;
 }
+
 .testimonial-card {
     padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
 }
 .testimonial-cards {
     display: flex;
     gap: 40px;
     margin-bottom: 88px;
+    position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    right: 0;
+    left: initial;
+    top: -40px;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+.swiper-button-prev{
+    right: 64px;
+
 }
 
 .testimonial-images {
@@ -674,6 +699,7 @@ a {
     display: flex;
     gap: 29px;
     padding-bottom: 178px;
+    position: relative;
 }
 
 .icon {
@@ -884,9 +910,11 @@ a {
 
 
   
-  #tabs {
+#tabs {
     list-style-type: none;
-  }
+    margin-bottom: 52px;
+    margin-top: 52px;
+}
   #tabs li {
     display: inline-block;
     margin-bottom: -1px;
@@ -896,16 +924,19 @@ a {
     height: 100%;
     padding: 10px;
     border-radius: 4px 4px 0 0;
-    border: 1px solid;
-    border-color: #ccc #ccc transparent;
+    /* border: 1px solid;
+    border-color: #ccc #ccc transparent; */
     text-align: center;
     margin-bottom: 0;
+    color: #3e3e3e;
    
   }
-  
+  #tabs .active a{
+    color: #ffffff;
+  }
   #tab-contents {
-    border: 1px solid #ccc;
-    background-color: #efefef;
+    /* border: 1px solid #ccc;
+    background-color: #efefef; */
   }
   #tab-contents .tab-contents {
     padding: 10px;
@@ -931,10 +962,11 @@ a {
     width: 90px;
     top: 10px;
     left: 10px;
-    background: red;
+    background: #6721B5;
     z-index: -1;
     border-radius: 5px;
     transition: 0.5s;
+    color: #fff;
 }
 #tabs li:nth-child(1).active~.tab-hov {
     transform: translateX(0px);
@@ -959,8 +991,8 @@ a {
 
   .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover;
   }
 
@@ -969,3 +1001,70 @@ a {
     margin-right: auto;
   }
 /* slider_fibished */
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 70px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {  
+    width: 54px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: #6721B5;
+}
+
+.hover-effect-testi:hover {
+    background-color: #6722B5;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+  
+}
+
+i.fa-solid.fa-arrow-left-long {
+     font-size: 30px;
+}
+
+i.fa-solid.fa-arrow-right-long {
+    font-size: 30px;
+}
+
+ .sidbar_sec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff94;
+    display: flex;
+    justify-content: right;
+ }
+ .sidbar{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    padding: 46px 60px 50px 50px;
+ }
+
+ .sidbar img {
+    width: 29%;
+    margin-bottom: 46px;0
+ }
+
+ .sidebar-para {
+    color: #3e3e3e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.1;
+    margin-bottom: 46px;
+ }
+
+ .logo-para {
+    border-bottom: 1px solid #EEF6FF;
+ }
+
+ .sidbar h2 {
+    color:#19082D;
+    font-family: "jost", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+ }

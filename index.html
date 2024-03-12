@@ -47,7 +47,41 @@
                     </div>
                 </div>
             </header>
-    
+            <div class="sidbar_sec">
+              <div class="sidbar">
+                <div class="logo-para">
+                  <img src="images/logo-1.svg" alt="">
+                <p class="sidebar-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo dolor nisi totam cupiditate id, sit quae facere aperiam libero eaque a beatae et obcaecati ipsum ad, est laborum tempore.</p>
+                </div>
+
+                <h2>Get In Touch</h2>
+                 <div class="email-div">
+                  <i class="fa-solid fa-envelope-circle-check"></i>
+                  <p>Email</p>
+                  <p>hello@yourmail.com</p>
+                 </div>
+                 <div class="phone-div">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p>Phone</p>
+                  <p>(00) 456 1122 7890</p>
+                 </div>
+                 <div class="location-div">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Location</p>
+                  <p>Riverside 255, San Francisco, USA</p>
+                 </div>
+
+                 <div class="sidebar-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-pinterest-p"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-tiktok"></i>
+                 </div>
+
+              </div>
+            </div>
            <!-- service section start  -->
            <div class="service-text">
             <p>What we do</p>
@@ -483,6 +517,7 @@ enim blandit volutpat maecenas.
 
        <!-- OUR PRICING finished -->
 
+      
        <!-- TESTIMONIAL section started  -->
 
        <section id="testimonial">
@@ -490,7 +525,10 @@ enim blandit volutpat maecenas.
             <h3 class="title">TESTIMONIAL</h3>
             <h2 class="people-say">What people are saying!</h2>
            <div class="testimonial-cards">
-             <!-- card - 1 -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   <!-- card - 1 -->
              <div class="testimonial-card box-shadow">
               <i class="fa-solid fa-quote-left mb-bottom quatation"></i>
               <p class="testimonial-para">I love your system. Agency is both attractive angle-down
@@ -508,7 +546,45 @@ enim blandit volutpat maecenas.
                 </div>
               </p>
             </div>
-            <!-- card - 2 -->
+             <!-- card - 2 -->
+             <div class="testimonial-card box-shadow">
+              <i class="fa-solid fa-quote-left mb-bottom quatation"></i>
+              <p class="testimonial-para">I love your system. Agency is both attractive angle-down
+                highly adaptable. Man, this thing is getting better
+                and better as I learn more about it. I am so pleased 
+                with this product.
+                <div class="testimonial-profile">
+                  <div class="img-1">
+                    <img class="testimonial-img" src="images/testimonial-profile-2.webp" alt="">
+                  </div>
+                  <div class="img-desc">
+                    <h2>Billu Gol</h2>
+                    <p>CEO, Agrok Inc.</p>
+                  </div>
+                </div>
+              </p>
+            </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- card - 1 -->
+             <div class="testimonial-card box-shadow">
+              <i class="fa-solid fa-quote-left mb-bottom quatation"></i>
+              <p class="testimonial-para">I love your system. Agency is both attractive angle-down
+                highly adaptable. Man, this thing is getting better
+                and better as I learn more about it. I am so pleased 
+                with this product.
+                <div class="testimonial-profile">
+                  <div class="img-1">
+                    <img class="testimonial-img" src="images/testimonial-profile-1webp.webp" alt="">
+                  </div>
+                  <div class="img-desc">
+                    <h2>Billu Gol</h2>
+                    <p>CEO, Agrok Inc.</p>
+                  </div>
+                </div>
+              </p>
+            </div>
+                   <!-- card - 2 -->
             <div class="testimonial-card box-shadow">
               <i class="fa-solid fa-quote-left mb-bottom quatation"></i>
               <p class="testimonial-para">I love your system. Agency is both attractive angle-down
@@ -526,6 +602,12 @@ enim blandit volutpat maecenas.
                 </div>
               </p>
             </div>
+                </div>
+              </div>
+            </div>           
+            <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long hover-effect-testi"></i></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long hover-effect-testi"></i></div> 
+         
            </div>
 
            <div class="testimonial-images">
@@ -622,9 +704,9 @@ enim blandit volutpat maecenas.
            </div>
               </div>           
             </div>          
-            <div class="swiper-pagination"></div>
+            
           </div>          
-         
+          <div class="swiper-pagination"></div>
             
         </div>
  <!-- our news section end  -->
@@ -727,6 +809,21 @@ enim blandit volutpat maecenas.
       <script>
         var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     pagination: {
