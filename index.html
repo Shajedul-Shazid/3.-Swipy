@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Swipy</title>
 </head>
@@ -122,17 +123,22 @@
                  <p>Darkness they’re, moved whales great or void great man one man from blessed so our. Dominion good face was sixth male kind offer together beginning saw fifth midst they’re spirit which gathered. Appear saying blessed working experience.</p>
                  <div class="couter">
                    <div>
-                    <span>+07</span><br>
+                    <!-- <div id="numberWang"></div> -->
+                    <span>+0</span>
+                    <span id="numberWang"></span><br>
                     <p>Year of experience
                     </p>
                    </div>
                     <div>
-                     <span>+50k</span><br>
+                      <span>+</span>
+                     <span id="completedProject"></span>
+                     <span>k</span><br>
                     <p>Complete Project
                     </p>
                     </div>
                    <div>
-                    <span>+70</span><br>
+                    <span>+</span>
+                    <span id="clientSatisfied"></span><br>
                     <p>Client Satisfied</p>
                    </div>
                  </div>
@@ -300,84 +306,179 @@ enim blandit volutpat maecenas.
        <div class="pricing-text">
         <h3>our pricing</h3>
         <h2>Find the right plan.</h2>       
-       </div>
 
-       <div class="">
-        <div class="container three-card">
-            <!-- card-1 -->
-            <div class="price-card-1">
-                <div class="pricing-header">                  
-                   <h3>free</h3>
-                   <h2>$00.00</h2>
+        <!-- tabs is here  -->
+
+        <nav id="tabs">
+          <div class="tab-link">
+            <li class="active">
+              <a href="#tab1">Monthly</a>
+            </li>
+            <li><a href="#tab2">Yearly</a></li>
+            <div class="tab-hov"></div> 
+          </div>         
+        </nav>
+        
+        <section id="tab-contents">
+          <div id="tab1" class="tab-contents active">
+            <div class="">
+              <div class="container three-card">
+                  <!-- card-1 -->
+                  <div class="price-card-1">
+                      <div class="pricing-header">                  
+                         <h3>free</h3>
+                         <h2>$00.00</h2>
+                      </div>
+                      <div class="border"></div>
+                     <div class="pricing-body">
+                         <div class="description">Perfect for personal</div>
+                     <div class="features">
+                         <ul>
+                             <li>1 Users</li>
+                             <li>SaaS Metrics</li>
+                             <li>Team Collaboration</li>
+                             <li>Upload Your Document</li>
+                             <li>Export PDF</li>
+                         </ul>
+                     </div>
+                     <div class="price-btn">
+                      <button class="btn">get started</button>
+                       </div>
+                     </div>
+                  </div>
+                  <!-- card-2 -->
+                  <div class="price-card-1">
+                      <div class="pricing-header">
+                         <h3>basic</h3>
+                         <h2>$00.00</h2>
+                      </div>
+                      <div class="border"></div>
+                     <div class="pricing-body">
+                         <div class="description">Perfect for personal</div>
+                     <div class="features">
+                         <ul>
+                             <li>1 Users</li>
+                             <li>SaaS Metrics</li>
+                             <li>Team Collaboration</li>
+                             <li>Upload Your Document</li>
+                             <li>Export PDF</li>
+                         </ul>
+                     </div>
+                     <div class="price-btn">
+                      <button class="btn">get started</button>
+                       </div>
+                     </div>
+                  </div>
+                  <!-- card-3 -->
+                  <div class="price-card-1">
+                      <div class="pricing-header">
+                         <h3>enterprise</h3>
+                         <h2>$00.00</h2>
+                      </div>
+                      <div class="border"></div>
+                     <div class="pricing-body">
+                         <div class="description">Perfect for personal</div>
+                     <div class="features">
+                         <ul>
+                             <li>1 Users</li>
+                             <li>SaaS Metrics</li>
+                             <li>Team Collaboration</li>
+                             <li>Upload Your Document</li>
+                             <li>Export PDF</li>
+                         </ul>
+                     </div>
+                     <div class="price-btn">
+                      <button class="btn">get started</button>
+                       </div>
+                     </div>
+                  </div>                  
+                  </div>
+             </div>
+          </div>
+          <div id="tab2" class="tab-contents">
+            <div class="">
+              <div class="container three-card">
+                  <!-- card-1 -->
+                  <div class="price-card-1">
+                      <div class="pricing-header">                  
+                         <h3>free</h3>
+                         <h2>$00.00</h2>
+                      </div>
+                      <div class="border"></div>
+                     <div class="pricing-body">
+                         <div class="description">Perfect for personal</div>
+                     <div class="features">
+                         <ul>
+                             <li>1 Users</li>
+                             <li>SaaS Metrics</li>
+                             <li>Team Collaboration</li>
+                             <li>Upload Your Document</li>
+                             <li>Export PDF</li>
+                         </ul>
+                     </div>
+                     <div class="price-btn">
+                      <button class="btn">get started</button>
+                       </div>
+                     </div>
+                  </div>
+                  <!-- card-3 -->
+                  <div class="price-card-1">
+                    <div class="pricing-header">
+                       <h3>enterprise</h3>
+                       <h2>$00.00</h2>
+                    </div>
+                    <div class="border"></div>
+                   <div class="pricing-body">
+                       <div class="description">Perfect for personal</div>
+                   <div class="features">
+                       <ul>
+                           <li>1 Users</li>
+                           <li>SaaS Metrics</li>
+                           <li>Team Collaboration</li>
+                           <li>Upload Your Document</li>
+                           <li>Export PDF</li>
+                       </ul>
+                   </div>
+                   <div class="price-btn">
+                    <button class="btn">get started</button>
+                     </div>
+                   </div>
                 </div>
-                <div class="border"></div>
-               <div class="pricing-body">
-                   <div class="description">Perfect for personal</div>
-               <div class="features">
-                   <ul>
-                       <li>1 Users</li>
-                       <li>SaaS Metrics</li>
-                       <li>Team Collaboration</li>
-                       <li>Upload Your Document</li>
-                       <li>Export PDF</li>
-                   </ul>
-               </div>
-               <div class="price-btn">
-                <button class="btn">get started</button>
-                 </div>
-               </div>
-            </div>
-            <!-- card-2 -->
-            <div class="price-card-1">
-                <div class="pricing-header">
-                   <h3>basic</h3>
-                   <h2>$00.00</h2>
-                </div>
-                <div class="border"></div>
-               <div class="pricing-body">
-                   <div class="description">Perfect for personal</div>
-               <div class="features">
-                   <ul>
-                       <li>1 Users</li>
-                       <li>SaaS Metrics</li>
-                       <li>Team Collaboration</li>
-                       <li>Upload Your Document</li>
-                       <li>Export PDF</li>
-                   </ul>
-               </div>
-               <div class="price-btn">
-                <button class="btn">get started</button>
-                 </div>
-               </div>
-            </div>
-            <!-- card-3 -->
-            <div class="price-card-1">
-                <div class="pricing-header">
-                   <h3>enterprise</h3>
-                   <h2>$00.00</h2>
-                </div>
-                <div class="border"></div>
-               <div class="pricing-body">
-                   <div class="description">Perfect for personal</div>
-               <div class="features">
-                   <ul>
-                       <li>1 Users</li>
-                       <li>SaaS Metrics</li>
-                       <li>Team Collaboration</li>
-                       <li>Upload Your Document</li>
-                       <li>Export PDF</li>
-                   </ul>
-               </div>
-               <div class="price-btn">
-                <button class="btn">get started</button>
-                 </div>
-               </div>
-            </div>
-            
-              </div>
-           </div>
+                <!-- card-3 end -->
+                  <!-- card-2 -->
+                  <div class="price-card-1">
+                      <div class="pricing-header">
+                         <h3>basic</h3>
+                         <h2>$00.00</h2>
+                      </div>
+                      <div class="border"></div>
+                     <div class="pricing-body">
+                         <div class="description">Perfect for personal</div>
+                     <div class="features">
+                         <ul>
+                             <li>1 Users</li>
+                             <li>SaaS Metrics</li>
+                             <li>Team Collaboration</li>
+                             <li>Upload Your Document</li>
+                             <li>Export PDF</li>
+                         </ul>
+                     </div>
+                     <div class="price-btn">
+                      <button class="btn">get started</button>
+                       </div>
+                     </div>
+                  </div>                  
+                    </div>
+             </div>
+          </div>          
+        </section>
+
+        <!-- tabs done -->
+
+
+
+       </div>       
        </div> 
-
     </div>
 
        <!-- OUR PRICING finished -->
@@ -443,11 +544,11 @@ enim blandit volutpat maecenas.
             <div class="img-5">
               <img src="images/testimonial-img-5.webp" alt="">
             </div>
-           </div>
-            
+           </div>            
            </div>
        </section>
        <!-- TESTIMONIAL section end -->
+
 
        <!-- our news section started  -->
 
@@ -455,10 +556,18 @@ enim blandit volutpat maecenas.
         <h3>our news</h3>
         <h2>latest news</h2>
 
-      
+        <!-- swiper-js start -->
+
+        
+
+        <!-- swiper js finish -->
 
         <div class="container news-cards">
-            <!-- news card 1  -->
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!-- news card 1  -->
           <div class="news-card">
             <img src="images/our-news-img-1.webp" alt="">
             <div class="icon">
@@ -470,19 +579,23 @@ enim blandit volutpat maecenas.
             <p ><a href="" class="news-para">5 signs your design strategy needs rethinking</a></p>
             <a href="" class="read-more"> read more <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
-           <!-- news card 2  -->
+              </div>
+              <div class="swiper-slide">
+                  <!-- news card 2  -->
            <div class="news-card">
-           <a href=""> <img src="images/our-news-img-2.webp" alt=""></a>
-            <div class="icon">
-              <i class="fa-regular fa-user"></i>
-              <span><a href="">rstheme</a></span>
-              <i class="fa-regular fa-bookmark"></i>
-              <span><a href="">ux design</a></span>
-            </div>
-            <p ><a href="" class="news-para">5 signs your design strategy needs rethinking</a></p>
-            <a href="" class="read-more"> read more <i class="fa-solid fa-arrow-right-long"></i></a>
-          </div>
-             <!-- news card 3  -->
+            <a href=""> <img src="images/our-news-img-2.webp" alt=""></a>
+             <div class="icon">
+               <i class="fa-regular fa-user"></i>
+               <span><a href="">rstheme</a></span>
+               <i class="fa-regular fa-bookmark"></i>
+               <span><a href="">ux design</a></span>
+             </div>
+             <p ><a href="" class="news-para">5 signs your design strategy needs rethinking</a></p>
+             <a href="" class="read-more"> read more <i class="fa-solid fa-arrow-right-long"></i></a>
+           </div>
+              </div>
+              <div class="swiper-slide">
+                 <!-- news card 3  -->
              <div class="news-card">
               <img src="images/ournews-img-3.webp" alt="">
               <div class="icon">
@@ -494,6 +607,25 @@ enim blandit volutpat maecenas.
               <p ><a href="" class="news-para">5 signs your design strategy needs rethinking</a></p>
               <a href="" class="read-more"> read more <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="news-card">
+            <a href=""> <img src="images/our-news-img-2.webp" alt=""></a>
+             <div class="icon">
+               <i class="fa-regular fa-user"></i>
+               <span><a href="">rstheme</a></span>
+               <i class="fa-regular fa-bookmark"></i>
+               <span><a href="">ux design</a></span>
+             </div>
+             <p ><a href="" class="news-para">5 signs your design strategy needs rethinking</a></p>
+             <a href="" class="read-more"> read more <i class="fa-solid fa-arrow-right-long"></i></a>
+           </div>
+              </div>           
+            </div>          
+            <div class="swiper-pagination"></div>
+          </div>          
+         
+            
         </div>
  <!-- our news section end  -->
        </section>
@@ -590,10 +722,24 @@ enim blandit volutpat maecenas.
           </div>
         </div>
        </div>
-       
-
-
-
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+      </script>
+       <!--swiperslider_finished-->
  <script src="script.js"></script>
 </body>
 </html>
