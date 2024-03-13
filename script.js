@@ -1,3 +1,24 @@
+function showSidbar() {
+	// console.log("This is working fine just");
+	let siebarSec = document.querySelector(".sidbar_sec");
+	if(siebarSec.style.right === "0%"){
+		siebarSec.style.right = "-100%";
+		siebarSec.style.transition = "1s";
+		
+	}
+	else{
+		siebarSec.style.right = "0%";
+	}
+}
+
+function hideSide() {
+	siebarSec.style.right = "0%";
+	siebarSec.style.transition = "1s";
+}
+
+
+
+
 const accordions = document.querySelectorAll('.accordion')
 
 accordions.forEach((accordion) => {

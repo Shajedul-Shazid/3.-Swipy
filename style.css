@@ -62,7 +62,7 @@ a:hover {
 }
 .text-content {
     padding-top: 188px;
-    width: 51%;
+    width: 52%;
     padding-bottom: 250px;
 }
 .sologan {
@@ -532,7 +532,8 @@ header {
     color: #fff;
   }
   .three-card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
   }
   .pricing-body {
@@ -1031,23 +1032,27 @@ i.fa-solid.fa-arrow-right-long {
  .sidbar_sec{
     position: fixed;
     top: 0;
-    left: 0;
+    right: -100%;
     width: 100%;
     height: 100%;
     background-color:#ffffff94;
     display: flex;
     justify-content: right;
+    transition: 1s;
+    /* overflow: scroll; */
+
  }
  .sidbar{
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-color: white;
     padding: 46px 60px 50px 50px;
+    overflow: scroll;
  }
 
  .sidbar img {
     width: 29%;
-    margin-bottom: 46px;0
+    margin-bottom: 46px;
  }
 
  .sidebar-para {
@@ -1068,3 +1073,209 @@ i.fa-solid.fa-arrow-right-long {
     font-size: 25px;
     font-weight: 500;
  }
+
+ .get-in-touch {
+    margin-top: 46px;    
+ }
+ .get-title {
+    color:#19082D;
+    font-family: "jost", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+ }
+
+ .three-contact-div {
+    margin-top: 46px;
+    border-bottom: 1px solid #EEF6FF;
+ }
+
+ .email-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+ }
+.phone-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.location-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+ .three-contact-div i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6721B5;
+    color: #fff;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .email-div,
+ .phone-div,
+ .location-div {
+    margin-bottom: 30px;
+ }
+
+ .side-para-title {
+    color: #3e3e3e;
+    font-family: "jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+ }
+ .side-para-contacts {
+    color:#19082D;
+    font-family: "jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+ }
+ .sidebar-icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 44px;
+    margin-bottom: 128px;
+ }
+ 
+.sidebar-icon i {
+    background-color: #f4f3f4;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;    
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+    font-size: 17.25px;
+    font-weight: 400;
+ }
+
+ .cross-icon {
+    float: right;
+ }
+
+ .cross-icon i {
+    font-size: 30px;
+ }
+
+ /* responsive code  */
+
+ @media only screen and (max-width: 900px) {
+     .nav-item {
+        display: none;
+     }
+     .container {
+        width: 93%;
+     }
+     .logo img {
+        width: 68%;
+     }
+     .text-content {
+        width: 54%;
+        padding-top: 93px;
+     }
+     .sologan {
+        font-size: 54px;
+     }
+     .banner-img {
+        margin-top: 18px;
+        width: 93%;
+      }
+      .banner-img img{
+         width: 93%;
+      }
+      .card {
+        padding: 15px 15px 25px 15px;
+      }
+      .card h3 {
+        font-size: 23px;
+      }
+      .card p {
+        text-align: center;
+      }
+      .couter {
+        display: flex;
+        flex-direction: column;
+      }
+      .about-text h2 {
+        font-size: 40px;
+      }
+      .market {
+        font-size: 29px;
+      }
+      .work-process-left {
+        margin-left: 22px;
+    }
+    .work-process-left h2{
+        font-size: 40px;
+    }
+    .work-process-right {
+        width: 100%;
+    }
+    .three-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 17px;
+        text-align: left;
+    }
+    #testimonial .people-say {
+        font-size: 40px;
+    }
+    .lets-talk-content h2 {
+        font-size: 40px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .flex-span {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

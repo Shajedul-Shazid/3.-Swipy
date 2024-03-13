@@ -29,7 +29,7 @@
                     </div>
                     <div class="nav-search">
                         <a href=""><span><i class="fa-solid fa-magnifying-glass search-icon"></i></span></a>
-                        <a href=""><span><i class="fa-solid fa-bars-staggered circle"></i></span></a>
+                        <a onclick="showSidbar()" href="#"><span><i class="fa-solid fa-bars-staggered circle"></i></span></a>
                     </div>
                    </div>
                 </nav>
@@ -49,36 +49,54 @@
             </header>
             <div class="sidbar_sec">
               <div class="sidbar">
+                <div class="cross-icon">
+                  <a onclick="showSidbar()" href="#"
+                  
+                  ><i class="fa-solid fa-xmark"></i></a>
+                </div>
                 <div class="logo-para">
-                  <img src="images/logo-1.svg" alt="">
+                 <img src="images/logo-1.svg" alt="">
+                 
                 <p class="sidebar-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo dolor nisi totam cupiditate id, sit quae facere aperiam libero eaque a beatae et obcaecati ipsum ad, est laborum tempore.</p>
                 </div>
+                
 
-                <h2>Get In Touch</h2>
-                 <div class="email-div">
-                  <i class="fa-solid fa-envelope-circle-check"></i>
-                  <p>Email</p>
-                  <p>hello@yourmail.com</p>
-                 </div>
-                 <div class="phone-div">
-                  <i class="fa-solid fa-phone-volume"></i>
-                  <p>Phone</p>
-                  <p>(00) 456 1122 7890</p>
-                 </div>
-                 <div class="location-div">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <p>Location</p>
-                  <p>Riverside 255, San Francisco, USA</p>
-                 </div>
+               <div class="get-in-touch">
+                <h2 class="get-title">Get In Touch</h2>
+                
+                <div class="three-contact-div">
+                  <div class="email-div">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                     <div class="email-contact">
+                      <p class="side-para-title">Email</p>
+                      <p class="side-para-contacts">hello@yourmail.com</p>
+                     </div>
+                   </div>
+                   <div class="phone-div">
+                    <i class="fa-solid fa-phone-volume"></i>
+                     <div class="phone-contact">
+                      <p class="side-para-title">Phone</p>
+                      <p class="side-para-contacts">(00) 456 1122 7890</p>
+                     </div>
+                   </div>
+                   <div class="location-div">
+                    <i class="fa-solid fa-location-dot"></i>
+                     <div class="location-contact">
+                      <p class="side-para-title">Location</p>
+                     <p class="side-para-contacts">Riverside 255, San Francisco, USA</p>
+                     </div>
+                   </div>
+                </div>
 
-                 <div class="sidebar-icon">
-                  <i class="fa-brands fa-facebook-f"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-pinterest-p"></i>
-                  <i class="fa-brands fa-linkedin-in"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-tiktok"></i>
-                 </div>
+                <div class="sidebar-icon">
+                 <span><i class="fa-brands fa-facebook-f"></i></span>
+                 <i class="fa-brands fa-twitter"></i>
+                 <i class="fa-brands fa-pinterest-p"></i>
+                 <i class="fa-brands fa-linkedin-in"></i>
+                 <i class="fa-brands fa-instagram"></i>
+                 <i class="fa-brands fa-tiktok"></i>
+                </div>
+               </div>
 
               </div>
             </div>
@@ -665,7 +683,7 @@ enim blandit volutpat maecenas.
               <div class="swiper-slide">
                   <!-- news card 2  -->
            <div class="news-card">
-            <a href=""> <img src="images/our-news-img-2.webp" alt=""></a>
+            <img src="images/our-news-img-2.webp" alt="">
              <div class="icon">
                <i class="fa-regular fa-user"></i>
                <span><a href="">rstheme</a></span>
